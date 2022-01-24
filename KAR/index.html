@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PREZENTACJA</title>
+        <style>
+            body{
+                background-color:#fffacd;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+            #main{
+                width: 50%;
+                height: 300px;
+                margin:auto;
+                background-color:#fffacd;
+                margin-top:20%;
+            }
+            #dog{
+                width:30%;
+                height: 100%;
+                background-color:black;
+                display:inline-block;
+                margin-left:2%;
+                border-radius: 10%;
+               
+            }
+            #cat{
+                width:30%;
+                height: 100%;
+                background-color:black;
+                display:inline-block;
+                margin-left:2%;
+                border-radius: 10%;
+                
+            }
+            #raccon{
+                width:30%;
+                height: 100%;
+                background-color:black;
+                display:inline-block;
+                margin-left:2%;
+                border-radius: 10%;
+                
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10%;
+                opacity: 0.8;
+            }
+            img:hover{
+                opacity: 1;
+            }
+            h1{
+                text-align: center;
+            }
+            h2{
+                display:inline-block;
+                margin-left:20%;
+            }
+
+            form {
+            background-color: lightgrey;
+            margin: 30px;
+        }
+
+        input, select, textarea, label {
+            padding: 10px;
+            margin: 10px;
+            font-size: 1em;
+            width: 90%;
+        }
+
+        select {
+            width: 95%;
+            box-sizing: border-box;
+        }
+
+        label {
+            margin: 0px;
+        }
+
+        input[type=text], 
+        input[type=password],
+        input[type=date],
+        input[type=search],
+        input[type=range],
+        input[type=week],
+        input[type=number],
+        textarea,
+        select
+        {
+            border: none;
+            border-bottom: 3px solid rgb(55, 0, 255);
+            background-color: rgb(240, 240, 232);
+            border-radius: 2px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus
+        {
+            outline: 4px solid red;
+        }
+
+
+        input[type=radio],
+        input[type=checkbox] {
+            width: 20px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            font-size: 1em;
+            width: 200px;
+            margin: 10px;
+        }
+
+        button:hover{
+            background-color: darkmagenta;
+        }
+        </style>
+        <script>
+            function send(){
+                alert("Dziękujemy za wysłanie formularza");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Najpiękniejsze zwierzątka świata</h1>
+<div id="main">
+    <div id="dog"><a href="1.html"><img src="icondog.jpg"></div></a>
+    <div id="cat"><a href="2.html"><img src="iconcat.jpeg"></div></a>
+    <div id="raccon"><a href="3.html"><img src="iconrac.jpg"></div></a>
+    <h2>PIES</h2>
+    <h2>KOT</h2>
+    <h2>SZOP</h2>
+
+    <form method="POST" action="">
+        <fieldset>
+            <legend>Formularz kontaktowy</legend>
+        <label for="imie">Imię:</label><br>
+        <input type="text" placeholder="Podaj imię" id="imie" name="imie"><br>           
+        <label for="nazwisko">Nazwisko</label><br>
+        <input type="text" id="nazwisko" name="nazwisko"><br>
+        <label for="haslo">Hasło</label><br>
+        <input type="password" id="haslo"><br>
+        <label for="platnosc">Wybierz płatność</label><br>
+        <select id="platnosc" size="3">
+            <option>Karta debetowa</option>
+            <option>Karta kredytowa</option>
+            <option>PayPal</option>
+        </select><br>
+        <textarea rows="10">
+
+        </textarea>
+        <br>
+        <label for="zgoda">Zapoznałem się z regulaminem</label>
+        <input type="checkbox" id="zgoda" checked>
+        <br>
+        <input type="radio" id="red" name="mmm">
+        <label for="red">Czerwony</label><br>
+        <input type="radio" id="green" name="mmm">
+        <label for="green">Zielony</label><br>
+        <input type="radio" id="blue" name="mmm">
+        <label for="blue">Niebieski</label><br>
+        <br>
+        <input type="date">
+        <br>
+        <input type="file">
+        <br>
+        <input type="number" min="0" max="10" value="3" readonly>
+        <input type="range" min="0" max="10"><br>
+
+        <input type="search">
+        <input type="week">
+
+
+        <br>
+        <button type="submit" onclick="send()">Złóż zamówienie</button>
+    </fieldset>
+    </form>
+
+
+</div>
+
+    </body>
+</html>
